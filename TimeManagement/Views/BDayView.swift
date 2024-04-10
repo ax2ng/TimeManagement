@@ -8,30 +8,28 @@
 import SwiftUI
 
 struct BDayView: View {
-    @State private var activeTab: Tab = .home
+    @State private var activeTab: TabBDay = .home
     
-    @State private var allTabs: [AnimatedTab] = Tab.allCases.compactMap { tab -> AnimatedTab? in return .init(tab: tab)
+    @State private var allTabs: [AnimatedTab1] = TabBDay.allCases.compactMap { tab -> AnimatedTab1? in return .init(tabBDay: tab)
     }
     var body: some View {
         VStack(spacing: 0){
             TabView(selection: $activeTab){
                 NavigationStack{
                     VStack{
-                        Text("Home")
+                        Text("BDay")
                             .padding(.bottom, 500)
                     }
-                    VStack{
-                        Text("Test")
-                    }
-                    
+        
+                    .navigationTitle(TabBDay.home.title)
                 }
-                .setUpTab(.home)
+                .setUpTab(.homee)
                 
                 NavigationStack{
                     VStack{
-                        Text("Plus")
+                        Text("Add")
                     }
-                    .navigationTitle(Tab.plus.title)
+                    .navigationTitle(TabBDay.plus.title)
                 }
                 .setUpTab(.plus)
                 
@@ -39,7 +37,7 @@ struct BDayView: View {
                     VStack{
                         Text("Calendar")
                     }
-                    .navigationTitle(Tab.calendar.title)
+                    .navigationTitle(TabBDay.calendar.title)
                 }
                 .setUpTab(.calendar)
             }
@@ -52,7 +50,7 @@ struct BDayView: View {
     func CustomTabBar() -> some View {
         HStack(spacing: 0){
             ForEach($allTabs) { $animatedTab in
-                let tab = animatedTab.tab
+                let tab = animatedTab.tabBDay
                 
                 VStack(spacing: 4) {
                     Image(systemName: tab.rawValue)
@@ -83,7 +81,7 @@ struct BDayView: View {
                 
             }
         }
-        .background(.bar)
+        .background(.bar.opacity(0.25))
     }
 }
 
@@ -93,7 +91,7 @@ struct BDayView: View {
 
 extension View {
     @ViewBuilder
-    func setUpTab(_ tab: Tab) -> some View {
+    func setUpTab(_ tab: TabBDay) -> some View {
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .tag(tab)

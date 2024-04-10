@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Tab: String, CaseIterable {
+enum TabBDay: String, CaseIterable {
     case home = "house"
     case plus = "plus.circle"
     case calendar = "calendar"
@@ -25,58 +25,77 @@ enum Tab: String, CaseIterable {
 }
 
 enum TabToDo: String, CaseIterable {
-    case home = "house"
-    case plus = "plus.circle"
-    case calendar = "calendar"
+    case homee = "house"
+    case pluss = "plus.circle"
+    case pie = "chart.pie"
     
     var title: String {
         switch self {
-        case .home:
-            return "BDay"
-        case .plus:
+        case .homee:
+            return "ToDo"
+        case .pluss:
             return ""
-        case .calendar:
-            return "Calendar"
+        case .pie:
+            return "Completed"
         }
     }
 }
 
 enum TabNotes: String, CaseIterable {
-    case home = "house"
-    case plus = "plus.circle"
-    case calendar = "calendar"
+    case homeee = "house"
+    case plusss = "plus.circle"
+    case trash = "trash"
     
     var title: String {
         switch self {
-        case .home:
-            return "BDay"
-        case .plus:
+        case .homeee:
+            return "Notes"
+        case .plusss:
             return ""
-        case .calendar:
-            return "Calendar"
+        case .trash:
+            return "Deleted"
         }
     }
 }
 
 enum TabHabit: String, CaseIterable {
-    case home = "house"
-    case plus = "plus.circle"
-    case calendar = "calendar"
+    case homeeee = "house"
+    case plussss = "plus.circle"
+    case category = "circle.grid.2x2"
     
     var title: String {
         switch self {
-        case .home:
-            return "BDay"
-        case .plus:
+        case .homeeee:
+            return "HabitTracker"
+        case .plussss:
             return ""
-        case .calendar:
-            return "Calendar"
+        case .category:
+            return "Category"
         }
     }
 }
 
-struct AnimatedTab: Identifiable{
+struct AnimatedTab1: Identifiable{
     var id: UUID = .init()
-    var tab: Tab
+    var tabBDay: TabBDay
     var isAnimating: Bool?
 }
+
+struct AnimatedTab2: Identifiable{
+    var id: UUID = .init()
+    var tabToDo: TabToDo
+    var isAnimating: Bool?
+}
+
+struct AnimatedTab3: Identifiable{
+    var id: UUID = .init()
+    var tabNotes: TabNotes
+    var isAnimating: Bool?
+}
+
+struct AnimatedTab4: Identifiable{
+    var id: UUID = .init()
+    var tabHabit: TabHabit
+    var isAnimating: Bool?
+}
+
