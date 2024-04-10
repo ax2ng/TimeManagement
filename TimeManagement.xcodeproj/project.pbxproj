@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A0AC4232BA59F48004E88A6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0AC4222BA59F48004E88A6 /* WidgetKit.framework */; };
+		9A0AC4252BA59F48004E88A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0AC4242BA59F48004E88A6 /* SwiftUI.framework */; };
+		9A0AC4282BA59F48004E88A6 /* BokerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AC4272BA59F48004E88A6 /* BokerWidgetBundle.swift */; };
+		9A0AC42A2BA59F48004E88A6 /* BokerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AC4292BA59F48004E88A6 /* BokerWidgetLiveActivity.swift */; };
+		9A0AC42C2BA59F48004E88A6 /* BokerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AC42B2BA59F48004E88A6 /* BokerWidget.swift */; };
+		9A0AC42E2BA59F48004E88A6 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AC42D2BA59F48004E88A6 /* AppIntent.swift */; };
+		9A0AC4302BA59F4A004E88A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0AC42F2BA59F4A004E88A6 /* Assets.xcassets */; };
+		9A0AC4342BA59F4A004E88A6 /* BokerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9A0AC4202BA59F48004E88A6 /* BokerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A2109AF2BA1FE83006759B5 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2109AE2BA1FE83006759B5 /* SplashScreenView.swift */; };
+		9A7E42B12BBC6D6100D48D5D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B02BBC6D6100D48D5D /* Auth */; };
+		9A7E42B32BBC6D6100D48D5D /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B22BBC6D6100D48D5D /* Functions */; };
+		9A7E42B52BBC6D6100D48D5D /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B42BBC6D6100D48D5D /* PostgREST */; };
+		9A7E42B72BBC6D6100D48D5D /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B62BBC6D6100D48D5D /* Realtime */; };
+		9A7E42B92BBC6D6100D48D5D /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B82BBC6D6100D48D5D /* Storage */; };
+		9A7E42BB2BBC6D6100D48D5D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42BA2BBC6D6100D48D5D /* Supabase */; };
+		9A9B206F2B63B02E00D4986C /* TimeManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B206E2B63B02E00D4986C /* TimeManagementApp.swift */; };
+		9A9B20732B63B03000D4986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B20722B63B03000D4986C /* Assets.xcassets */; };
+		9A9B20762B63B03000D4986C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B20752B63B03000D4986C /* Preview Assets.xcassets */; };
+		9A9B20802B63B03100D4986C /* TimeManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B207F2B63B03100D4986C /* TimeManagementTests.swift */; };
+		9A9B208A2B63B03100D4986C /* TimeManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B20892B63B03100D4986C /* TimeManagementUITests.swift */; };
+		9A9B208C2B63B03100D4986C /* TimeManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B208B2B63B03100D4986C /* TimeManagementUITestsLaunchTests.swift */; };
+		9A9B209A2B63B34C00D4986C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9A9B20992B63B34C00D4986C /* FirebaseAuth */; };
+		9A9B209C2B63B34C00D4986C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9A9B209B2B63B34C00D4986C /* FirebaseFirestore */; };
+		9A9B209E2B63B34C00D4986C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A9B209D2B63B34C00D4986C /* FirebaseFirestoreSwift */; };
+		9A9B20A02B63B54E00D4986C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B209F2B63B54E00D4986C /* GoogleService-Info.plist */; };
+		9AA54D662BC3FAEA0011572D /* BDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D652BC3FAEA0011572D /* BDayView.swift */; };
+		9AA54D682BC3FB060011572D /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D672BC3FB060011572D /* ToDoListView.swift */; };
+		9AA54D6A2BC3FB130011572D /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D692BC3FB130011572D /* NotesView.swift */; };
+		9AA54D6C2BC3FB1E0011572D /* HabitTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D6B2BC3FB1E0011572D /* HabitTrackerView.swift */; };
+		9AA54D6E2BC400BC0011572D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D6D2BC400BC0011572D /* ContentView.swift */; };
+		9AA54D702BC41EEE0011572D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA54D6F2BC41EEE0011572D /* Tab.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A0AC4322BA59F4A004E88A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9B20632B63B02E00D4986C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A0AC41F2BA59F48004E88A6;
+			remoteInfo = BokerWidgetExtension;
+		};
+		9A9B207C2B63B03100D4986C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9B20632B63B02E00D4986C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9B206A2B63B02E00D4986C;
+			remoteInfo = TimeManagement;
+		};
+		9A9B20862B63B03100D4986C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9B20632B63B02E00D4986C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9B206A2B63B02E00D4986C;
+			remoteInfo = TimeManagement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A0AC4382BA59F4A004E88A6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A0AC4342BA59F4A004E88A6 /* BokerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A0AC4202BA59F48004E88A6 /* BokerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BokerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0AC4222BA59F48004E88A6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9A0AC4242BA59F48004E88A6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9A0AC4272BA59F48004E88A6 /* BokerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokerWidgetBundle.swift; sourceTree = "<group>"; };
+		9A0AC4292BA59F48004E88A6 /* BokerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		9A0AC42B2BA59F48004E88A6 /* BokerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokerWidget.swift; sourceTree = "<group>"; };
+		9A0AC42D2BA59F48004E88A6 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		9A0AC42F2BA59F4A004E88A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A0AC4312BA59F4A004E88A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0AC4582BA60830004E88A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9A2109AE2BA1FE83006759B5 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		9A9B206B2B63B02E00D4986C /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B206E2B63B02E00D4986C /* TimeManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementApp.swift; sourceTree = "<group>"; };
+		9A9B20722B63B03000D4986C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9B20752B63B03000D4986C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A9B207B2B63B03100D4986C /* TimeManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B207F2B63B03100D4986C /* TimeManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementTests.swift; sourceTree = "<group>"; };
+		9A9B20852B63B03100D4986C /* TimeManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B20892B63B03100D4986C /* TimeManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementUITests.swift; sourceTree = "<group>"; };
+		9A9B208B2B63B03100D4986C /* TimeManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A9B209F2B63B54E00D4986C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9AA54D652BC3FAEA0011572D /* BDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDayView.swift; sourceTree = "<group>"; };
+		9AA54D672BC3FB060011572D /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		9AA54D692BC3FB130011572D /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		9AA54D6B2BC3FB1E0011572D /* HabitTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerView.swift; sourceTree = "<group>"; };
+		9AA54D6D2BC400BC0011572D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AA54D6F2BC41EEE0011572D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A0AC41D2BA59F48004E88A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0AC4252BA59F48004E88A6 /* SwiftUI.framework in Frameworks */,
+				9A0AC4232BA59F48004E88A6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20682B63B02E00D4986C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7E42B72BBC6D6100D48D5D /* Realtime in Frameworks */,
+				9A7E42B52BBC6D6100D48D5D /* PostgREST in Frameworks */,
+				9A7E42B32BBC6D6100D48D5D /* Functions in Frameworks */,
+				9A9B209A2B63B34C00D4986C /* FirebaseAuth in Frameworks */,
+				9A7E42B92BBC6D6100D48D5D /* Storage in Frameworks */,
+				9A7E42BB2BBC6D6100D48D5D /* Supabase in Frameworks */,
+				9A9B209C2B63B34C00D4986C /* FirebaseFirestore in Frameworks */,
+				9A7E42B12BBC6D6100D48D5D /* Auth in Frameworks */,
+				9A9B209E2B63B34C00D4986C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20782B63B03000D4986C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20822B63B03100D4986C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A0AC4212BA59F48004E88A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A0AC4222BA59F48004E88A6 /* WidgetKit.framework */,
+				9A0AC4242BA59F48004E88A6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A0AC4262BA59F48004E88A6 /* BokerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9A0AC4272BA59F48004E88A6 /* BokerWidgetBundle.swift */,
+				9A0AC4292BA59F48004E88A6 /* BokerWidgetLiveActivity.swift */,
+				9A0AC42B2BA59F48004E88A6 /* BokerWidget.swift */,
+				9A0AC42D2BA59F48004E88A6 /* AppIntent.swift */,
+				9A0AC42F2BA59F4A004E88A6 /* Assets.xcassets */,
+				9A0AC4312BA59F4A004E88A6 /* Info.plist */,
+			);
+			path = BokerWidget;
+			sourceTree = "<group>";
+		};
+		9A9B20622B63B02E00D4986C = {
+			isa = PBXGroup;
+			children = (
+				9A9B206D2B63B02E00D4986C /* TimeManagement */,
+				9A9B207E2B63B03100D4986C /* TimeManagementTests */,
+				9A9B20882B63B03100D4986C /* TimeManagementUITests */,
+				9A0AC4262BA59F48004E88A6 /* BokerWidget */,
+				9A0AC4212BA59F48004E88A6 /* Frameworks */,
+				9A9B206C2B63B02E00D4986C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A9B206C2B63B02E00D4986C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B206B2B63B02E00D4986C /* TimeManagement.app */,
+				9A9B207B2B63B03100D4986C /* TimeManagementTests.xctest */,
+				9A9B20852B63B03100D4986C /* TimeManagementUITests.xctest */,
+				9A0AC4202BA59F48004E88A6 /* BokerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9B206D2B63B02E00D4986C /* TimeManagement */ = {
+			isa = PBXGroup;
+			children = (
+				9A0AC4582BA60830004E88A6 /* Info.plist */,
+				9A9B20A42B63BBCA00D4986C /* Other */,
+				9A9B20A32B63BBA600D4986C /* Models */,
+				9A9B20A22B63BB8700D4986C /* ViewModels */,
+				9A9B20A12B63BB7000D4986C /* Views */,
+				9A9B20742B63B03000D4986C /* Preview Content */,
+			);
+			path = TimeManagement;
+			sourceTree = "<group>";
+		};
+		9A9B20742B63B03000D4986C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B20752B63B03000D4986C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A9B207E2B63B03100D4986C /* TimeManagementTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B207F2B63B03100D4986C /* TimeManagementTests.swift */,
+			);
+			path = TimeManagementTests;
+			sourceTree = "<group>";
+		};
+		9A9B20882B63B03100D4986C /* TimeManagementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B20892B63B03100D4986C /* TimeManagementUITests.swift */,
+				9A9B208B2B63B03100D4986C /* TimeManagementUITestsLaunchTests.swift */,
+			);
+			path = TimeManagementUITests;
+			sourceTree = "<group>";
+		};
+		9A9B20A12B63BB7000D4986C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AA54D6D2BC400BC0011572D /* ContentView.swift */,
+				9A2109AE2BA1FE83006759B5 /* SplashScreenView.swift */,
+				9AA54D652BC3FAEA0011572D /* BDayView.swift */,
+				9AA54D672BC3FB060011572D /* ToDoListView.swift */,
+				9AA54D692BC3FB130011572D /* NotesView.swift */,
+				9AA54D6B2BC3FB1E0011572D /* HabitTrackerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A9B20A22B63BB8700D4986C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A9B20A32B63BBA600D4986C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AA54D6F2BC41EEE0011572D /* Tab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A9B20A42B63BBCA00D4986C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B20722B63B03000D4986C /* Assets.xcassets */,
+				9A9B209F2B63B54E00D4986C /* GoogleService-Info.plist */,
+				9A9B206E2B63B02E00D4986C /* TimeManagementApp.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A0AC41F2BA59F48004E88A6 /* BokerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A0AC4352BA59F4A004E88A6 /* Build configuration list for PBXNativeTarget "BokerWidgetExtension" */;
+			buildPhases = (
+				9A0AC41C2BA59F48004E88A6 /* Sources */,
+				9A0AC41D2BA59F48004E88A6 /* Frameworks */,
+				9A0AC41E2BA59F48004E88A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BokerWidgetExtension;
+			productName = BokerWidgetExtension;
+			productReference = 9A0AC4202BA59F48004E88A6 /* BokerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9A9B206A2B63B02E00D4986C /* TimeManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B208F2B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagement" */;
+			buildPhases = (
+				9A9B20672B63B02E00D4986C /* Sources */,
+				9A9B20682B63B02E00D4986C /* Frameworks */,
+				9A9B20692B63B02E00D4986C /* Resources */,
+				9A0AC4382BA59F4A004E88A6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A0AC4332BA59F4A004E88A6 /* PBXTargetDependency */,
+			);
+			name = TimeManagement;
+			packageProductDependencies = (
+				9A9B20992B63B34C00D4986C /* FirebaseAuth */,
+				9A9B209B2B63B34C00D4986C /* FirebaseFirestore */,
+				9A9B209D2B63B34C00D4986C /* FirebaseFirestoreSwift */,
+				9A7E42B02BBC6D6100D48D5D /* Auth */,
+				9A7E42B22BBC6D6100D48D5D /* Functions */,
+				9A7E42B42BBC6D6100D48D5D /* PostgREST */,
+				9A7E42B62BBC6D6100D48D5D /* Realtime */,
+				9A7E42B82BBC6D6100D48D5D /* Storage */,
+				9A7E42BA2BBC6D6100D48D5D /* Supabase */,
+			);
+			productName = TimeManagement;
+			productReference = 9A9B206B2B63B02E00D4986C /* TimeManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A9B207A2B63B03000D4986C /* TimeManagementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B20922B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagementTests" */;
+			buildPhases = (
+				9A9B20772B63B03000D4986C /* Sources */,
+				9A9B20782B63B03000D4986C /* Frameworks */,
+				9A9B20792B63B03000D4986C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9B207D2B63B03100D4986C /* PBXTargetDependency */,
+			);
+			name = TimeManagementTests;
+			productName = TimeManagementTests;
+			productReference = 9A9B207B2B63B03100D4986C /* TimeManagementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A9B20842B63B03100D4986C /* TimeManagementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B20952B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagementUITests" */;
+			buildPhases = (
+				9A9B20812B63B03100D4986C /* Sources */,
+				9A9B20822B63B03100D4986C /* Frameworks */,
+				9A9B20832B63B03100D4986C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9B20872B63B03100D4986C /* PBXTargetDependency */,
+			);
+			name = TimeManagementUITests;
+			productName = TimeManagementUITests;
+			productReference = 9A9B20852B63B03100D4986C /* TimeManagementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A9B20632B63B02E00D4986C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9A0AC41F2BA59F48004E88A6 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9A9B206A2B63B02E00D4986C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9A9B207A2B63B03000D4986C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9A9B206A2B63B02E00D4986C;
+					};
+					9A9B20842B63B03100D4986C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9A9B206A2B63B02E00D4986C;
+					};
+				};
+			};
+			buildConfigurationList = 9A9B20662B63B02E00D4986C /* Build configuration list for PBXProject "TimeManagement" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A9B20622B63B02E00D4986C;
+			packageReferences = (
+				9A9B20982B63B34C00D4986C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = 9A9B206C2B63B02E00D4986C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9B206A2B63B02E00D4986C /* TimeManagement */,
+				9A9B207A2B63B03000D4986C /* TimeManagementTests */,
+				9A9B20842B63B03100D4986C /* TimeManagementUITests */,
+				9A0AC41F2BA59F48004E88A6 /* BokerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A0AC41E2BA59F48004E88A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0AC4302BA59F4A004E88A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20692B63B02E00D4986C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B20762B63B03000D4986C /* Preview Assets.xcassets in Resources */,
+				9A9B20732B63B03000D4986C /* Assets.xcassets in Resources */,
+				9A9B20A02B63B54E00D4986C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20792B63B03000D4986C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20832B63B03100D4986C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A0AC41C2BA59F48004E88A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0AC42A2BA59F48004E88A6 /* BokerWidgetLiveActivity.swift in Sources */,
+				9A0AC42E2BA59F48004E88A6 /* AppIntent.swift in Sources */,
+				9A0AC4282BA59F48004E88A6 /* BokerWidgetBundle.swift in Sources */,
+				9A0AC42C2BA59F48004E88A6 /* BokerWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20672B63B02E00D4986C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA54D662BC3FAEA0011572D /* BDayView.swift in Sources */,
+				9AA54D6C2BC3FB1E0011572D /* HabitTrackerView.swift in Sources */,
+				9AA54D6E2BC400BC0011572D /* ContentView.swift in Sources */,
+				9AA54D702BC41EEE0011572D /* Tab.swift in Sources */,
+				9AA54D6A2BC3FB130011572D /* NotesView.swift in Sources */,
+				9A9B206F2B63B02E00D4986C /* TimeManagementApp.swift in Sources */,
+				9A2109AF2BA1FE83006759B5 /* SplashScreenView.swift in Sources */,
+				9AA54D682BC3FB060011572D /* ToDoListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20772B63B03000D4986C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B20802B63B03100D4986C /* TimeManagementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B20812B63B03100D4986C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B208C2B63B03100D4986C /* TimeManagementUITestsLaunchTests.swift in Sources */,
+				9A9B208A2B63B03100D4986C /* TimeManagementUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A0AC4332BA59F4A004E88A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A0AC41F2BA59F48004E88A6 /* BokerWidgetExtension */;
+			targetProxy = 9A0AC4322BA59F4A004E88A6 /* PBXContainerItemProxy */;
+		};
+		9A9B207D2B63B03100D4986C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9B206A2B63B02E00D4986C /* TimeManagement */;
+			targetProxy = 9A9B207C2B63B03100D4986C /* PBXContainerItemProxy */;
+		};
+		9A9B20872B63B03100D4986C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9B206A2B63B02E00D4986C /* TimeManagement */;
+			targetProxy = 9A9B20862B63B03100D4986C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A0AC4362BA59F4A004E88A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BokerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BokerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagement.BokerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A0AC4372BA59F4A004E88A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BokerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BokerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 17.4.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagement.BokerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A9B208D2B63B03100D4986C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A9B208E2B63B03100D4986C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A9B20902B63B03100D4986C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = LightIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeManagement/Preview Content\"";
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeManagement/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Бокер";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagement";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A9B20912B63B03100D4986C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = LightIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeManagement/Preview Content\"";
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeManagement/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Бокер";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagement";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A9B20932B63B03100D4986C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagementTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeManagement.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeManagement";
+			};
+			name = Debug;
+		};
+		9A9B20942B63B03100D4986C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagementTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeManagement.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeManagement";
+			};
+			name = Release;
+		};
+		9A9B20962B63B03100D4986C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagementUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeManagement;
+			};
+			name = Debug;
+		};
+		9A9B20972B63B03100D4986C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNRTRVD7SK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Dubinker.TimeManagementUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeManagement;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A0AC4352BA59F4A004E88A6 /* Build configuration list for PBXNativeTarget "BokerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A0AC4362BA59F4A004E88A6 /* Debug */,
+				9A0AC4372BA59F4A004E88A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B20662B63B02E00D4986C /* Build configuration list for PBXProject "TimeManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B208D2B63B03100D4986C /* Debug */,
+				9A9B208E2B63B03100D4986C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B208F2B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B20902B63B03100D4986C /* Debug */,
+				9A9B20912B63B03100D4986C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B20922B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B20932B63B03100D4986C /* Debug */,
+				9A9B20942B63B03100D4986C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B20952B63B03100D4986C /* Build configuration list for PBXNativeTarget "TimeManagementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B20962B63B03100D4986C /* Debug */,
+				9A9B20972B63B03100D4986C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		9A9B20982B63B34C00D4986C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A7E42B02BBC6D6100D48D5D /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		9A7E42B22BBC6D6100D48D5D /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		9A7E42B42BBC6D6100D48D5D /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		9A7E42B62BBC6D6100D48D5D /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		9A7E42B82BBC6D6100D48D5D /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		9A7E42BA2BBC6D6100D48D5D /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A7E42AF2BBC6D6000D48D5D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		9A9B20992B63B34C00D4986C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A9B20982B63B34C00D4986C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9A9B209B2B63B34C00D4986C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A9B20982B63B34C00D4986C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9A9B209D2B63B34C00D4986C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A9B20982B63B34C00D4986C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9A9B20632B63B02E00D4986C /* Project object */;
+}
