@@ -70,7 +70,7 @@ enum TabHabit: String, CaseIterable {
         case .plussss:
             return ""
         case .category:
-            return "Category"
+            return "Categories"
         }
     }
 }

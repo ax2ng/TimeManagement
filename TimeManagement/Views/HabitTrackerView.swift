@@ -34,7 +34,7 @@ struct HabitTrackerView: View {
                 
                 NavigationStack{
                     VStack{
-                        Text("Category")
+                        Text("Categories")
                     }
                     .navigationTitle(TabHabit.category.title)
                 }
