@@ -19,7 +19,7 @@ struct NotesView: View {
                     VStack{
                         Text("Notes")
                     }
-                    .navigationTitle(TabNotes.homeee.title)
+
                     
                 }
                 .setUpTab(.homeee)
@@ -28,7 +28,7 @@ struct NotesView: View {
                     VStack{
                         Text("Add")
                     }
-                    .navigationTitle(TabNotes.plusss.title)
+                    
                 }
                 .setUpTab(.plusss)
                 
@@ -36,14 +36,16 @@ struct NotesView: View {
                     VStack{
                         Text("Deleted")
                     }
-                    .navigationTitle(TabNotes.trash.title)
                 }
                 .setUpTab(.trash)
-            }
+            }.navigationTitle(activeTab.title)
+                .navigationBarTitleDisplayMode(.large)
             
             CustomTabBar()
         }
     }
+        
+        
     
     @ViewBuilder
     func CustomTabBar() -> some View {

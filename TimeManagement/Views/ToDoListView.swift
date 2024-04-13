@@ -17,10 +17,9 @@ struct ToDoListView: View {
             TabView(selection: $activeTab){
                 NavigationStack{
                     VStack{
+                        
                         Text("ToDo")
                     }
-                    .navigationTitle(TabToDo.homee.title)
-                    
                 }
                 .setUpTab(.homee)
                 
@@ -28,7 +27,6 @@ struct ToDoListView: View {
                     VStack{
                         Text("Add")
                     }
-                    .navigationTitle(TabToDo.pluss.title)
                 }
                 .setUpTab(.pluss)
                 
@@ -36,15 +34,16 @@ struct ToDoListView: View {
                     VStack{
                         Text("Completed")
                     }
-                    .navigationTitle(TabToDo.pie.title)
                 }
                 .setUpTab(.pie)
-            }
+            }.navigationTitle(activeTab.title)
+                .navigationBarTitleDisplayMode(.large)
             
             CustomTabBar()
         }
+
     }
-    
+            
     @ViewBuilder
     func CustomTabBar() -> some View {
         HStack(spacing: 0){
@@ -81,6 +80,7 @@ struct ToDoListView: View {
             }
         }
         .background(.bar.opacity(0.25))
+
     }
 }
 

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BDayView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var activeTab: TabBDay = .home
     
     @State private var allTabs: [AnimatedTab1] = TabBDay.allCases.compactMap { tab -> AnimatedTab1? in return .init(tabBDay: tab)
@@ -18,18 +19,13 @@ struct BDayView: View {
                 NavigationStack{
                     VStack{
                         Text("BDay")
-                            .padding(.bottom, 500)
                     }
-        
-                    .navigationTitle(TabBDay.home.title)
                 }
                 .setUpTab(.homee)
-                
                 NavigationStack{
                     VStack{
                         Text("Add")
                     }
-                    .navigationTitle(TabBDay.plus.title)
                 }
                 .setUpTab(.plus)
                 
@@ -37,15 +33,14 @@ struct BDayView: View {
                     VStack{
                         Text("Calendar")
                     }
-                    .navigationTitle(TabBDay.calendar.title)
                 }
                 .setUpTab(.calendar)
-            }
+            }.navigationTitle(activeTab.title)
+                .navigationBarTitleDisplayMode(.large)
             
             CustomTabBar()
         }
     }
-    
     @ViewBuilder
     func CustomTabBar() -> some View {
         HStack(spacing: 0){
@@ -81,6 +76,7 @@ struct BDayView: View {
                 
             }
         }
+//        .navigationBarBackButtonHidden(true)  выключает кноку назад
         .background(.bar.opacity(0.25))
     }
 }

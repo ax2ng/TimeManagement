@@ -19,7 +19,6 @@ struct HabitTrackerView: View {
                     VStack{
                         Text("HabitTracker")
                     }
-                    .navigationTitle(TabHabit.homeeee.title)
                     
                 }
                 .setUpTab(.homeeee)
@@ -28,7 +27,6 @@ struct HabitTrackerView: View {
                     VStack{
                         Text("Add")
                     }
-                    .navigationTitle(TabHabit.plussss.title)
                 }
                 .setUpTab(.plussss)
                 
@@ -36,14 +34,16 @@ struct HabitTrackerView: View {
                     VStack{
                         Text("Categories")
                     }
-                    .navigationTitle(TabHabit.category.title)
                 }
                 .setUpTab(.category)
-            }
+            }.navigationTitle(activeTab.title)
+                .navigationBarTitleDisplayMode(.large)
             
             CustomTabBar()
         }
     }
+        
+        
     
     @ViewBuilder
     func CustomTabBar() -> some View {

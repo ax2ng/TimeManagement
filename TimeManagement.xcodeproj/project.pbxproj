@@ -16,6 +16,7 @@
 		9A0AC4302BA59F4A004E88A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0AC42F2BA59F4A004E88A6 /* Assets.xcassets */; };
 		9A0AC4342BA59F4A004E88A6 /* BokerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9A0AC4202BA59F48004E88A6 /* BokerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9A2109AF2BA1FE83006759B5 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2109AE2BA1FE83006759B5 /* SplashScreenView.swift */; };
+		9A2A3DDE2BC94FB8003F4A84 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A3DDD2BC94FB8003F4A84 /* TestView.swift */; };
 		9A7E42B12BBC6D6100D48D5D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B02BBC6D6100D48D5D /* Auth */; };
 		9A7E42B32BBC6D6100D48D5D /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B22BBC6D6100D48D5D /* Functions */; };
 		9A7E42B52BBC6D6100D48D5D /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 9A7E42B42BBC6D6100D48D5D /* PostgREST */; };
@@ -90,6 +91,7 @@
 		9A0AC4312BA59F4A004E88A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0AC4582BA60830004E88A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9A2109AE2BA1FE83006759B5 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		9A2A3DDD2BC94FB8003F4A84 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		9A9B206B2B63B02E00D4986C /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B206E2B63B02E00D4986C /* TimeManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementApp.swift; sourceTree = "<group>"; };
 		9A9B20722B63B03000D4986C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				9AA54D672BC3FB060011572D /* ToDoListView.swift */,
 				9AA54D692BC3FB130011572D /* NotesView.swift */,
 				9AA54D6B2BC3FB1E0011572D /* HabitTrackerView.swift */,
+				9A2A3DDD2BC94FB8003F4A84 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				9AA54D702BC41EEE0011572D /* Tab.swift in Sources */,
 				9AA54D6A2BC3FB130011572D /* NotesView.swift in Sources */,
 				9A9B206F2B63B02E00D4986C /* TimeManagementApp.swift in Sources */,
+				9A2A3DDE2BC94FB8003F4A84 /* TestView.swift in Sources */,
 				9A2109AF2BA1FE83006759B5 /* SplashScreenView.swift in Sources */,
 				9AA54D682BC3FB060011572D /* ToDoListView.swift in Sources */,
 			);
